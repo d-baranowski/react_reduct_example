@@ -16,7 +16,21 @@ function counter (state, action) {
   }
 }
 
-var createStore = Redux.createStore;
+//The store binds together the three principels of redux. It holds the current state, it lets you dispatch actions and when you create it you need to specify the reducer.
+const store = Redux.createStore(counter);
+
+const render = function() {
+  $('#content').text(store.getState());
+}
+
+//Creates a callbask which will be called any time an action was dispached
+store.subscribe(render);
+render();
+
+document.addEventListener('click', function () {
+  store.dispatch({type:'INCREMENT'});
+});
+
 
 //When you pass value 0 to state of the function counter and the action is INCREMENT it should return 1
 expect(
