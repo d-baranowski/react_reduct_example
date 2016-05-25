@@ -16,6 +16,8 @@ function counter (state, action) {
   }
 }
 
+var createStore = Redux.createStore;
+
 //When you pass value 0 to state of the function counter and the action is INCREMENT it should return 1
 expect(
   counter(0, {type: 'INCREMENT'})

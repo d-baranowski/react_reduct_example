@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prep": "browserify index.js -o bundle.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/daniel4567/react_reduct_example#readme",
   "dependencies": {
+    "browserify": "^13.0.1",
     "expect": "^1.20.1"
   }
 }
