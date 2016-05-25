@@ -1,11 +1,22 @@
 {
-  "name": "react_redux_example",
+  "name": "redux_react_example",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniel4567/react_reduct_example.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daniel4567/react_reduct_example/issues"
+  },
+  "homepage": "https://github.com/daniel4567/react_reduct_example#readme",
+  "dependencies": {
+    "expect": "^1.20.1"
+  }
 }

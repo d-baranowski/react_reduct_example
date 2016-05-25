@@ -5,6 +5,13 @@
 </head>
 
   <body>
-  <p>This is my web page</p>
+    <h1>Principles of redux</h1>
+    <ol>
+      <li>Entire state of the application is represented as a signle Java Script object</li>
+      <li>State is read only you cannot modify or write to it. Instead you need to dispach an action which is a minimal Java Script object describing the change.</li>
+      <li>To describe state mutations you have to write a pure reducer function that takes the previous state of the app and the action being dispached and returns the new state of the app.</li>
+    </ol>
+    <h1>Notes</h1>
+    <p>Pure functions are predictable and do not modify values of their parameters and do not cause any side effects. Some of the redux functions have to be pure and you need to be mindful of that.</p>
   </body>
 </html>
